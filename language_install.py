@@ -6,6 +6,7 @@ def install_languages(pairs):
     available_packages = package.get_available_packages()
 
     installed = translate.get_installed_languages()
+    print("Installed Languages :", installed)
     installed_pairs = {
         (lang.code, to.code)
         for lang in installed
